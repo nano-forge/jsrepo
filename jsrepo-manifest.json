@@ -10,11 +10,19 @@
 				"subdirectory": true,
 				"list": true,
 				"files": [
+					"AddPopup.svelte",
+					"BrickWrapper.svelte",
+					"ContentEditor.svelte",
 					"README.md",
-					"index.ts"
+					"content-manager.svelte.ts"
 				],
 				"localDependencies": [],
-				"dependencies": [],
+				"dependencies": [
+					"@nano-forge/sapphire",
+					"@nano-forge/util",
+					"svelte-dnd-action",
+					"svelte"
+				],
 				"devDependencies": [],
 				"_imports_": {}
 			}
