@@ -1,0 +1,15 @@
+{
+	"name": "nanoforgejsrepo",
+	"module": "index.ts",
+	"type": "module",
+	"devDependencies": {
+		"@types/bun": "latest",
+		"jsrepo": "^1.24.0"
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0"
+	},
+	"scripts": {
+		"build:registry": "jsrepo build"
+	}
+}
