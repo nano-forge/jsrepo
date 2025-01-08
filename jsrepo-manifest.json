@@ -1,0 +1,23 @@
+[
+	{
+		"name": "sapphire",
+		"blocks": [
+			{
+				"name": "content-editor",
+				"directory": "blocks/sapphire/content-editor",
+				"category": "sapphire",
+				"tests": false,
+				"subdirectory": true,
+				"list": true,
+				"files": [
+					"README.md",
+					"index.ts"
+				],
+				"localDependencies": [],
+				"dependencies": [],
+				"devDependencies": [],
+				"_imports_": {}
+			}
+		]
+	}
+]
