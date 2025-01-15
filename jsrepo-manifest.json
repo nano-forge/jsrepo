@@ -26,6 +26,25 @@
 				],
 				"devDependencies": [],
 				"_imports_": {}
+			},
+			{
+				"name": "image-editor",
+				"directory": "blocks/sapphire/image-editor",
+				"category": "sapphire",
+				"tests": false,
+				"subdirectory": true,
+				"list": true,
+				"files": [
+					"ImageFocusEditor.svelte",
+					"ImgEditor.svelte"
+				],
+				"localDependencies": [],
+				"dependencies": [
+					"@nano-forge/hammer.common",
+					"@nano-forge/sapphire"
+				],
+				"devDependencies": [],
+				"_imports_": {}
 			}
 		]
 	}
