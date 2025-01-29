@@ -3,6 +3,42 @@
 		"name": "sapphire",
 		"blocks": [
 			{
+				"name": "admin",
+				"directory": "blocks/sapphire/admin",
+				"category": "sapphire",
+				"tests": false,
+				"subdirectory": true,
+				"list": true,
+				"files": [
+					"api.ts",
+					"attachments",
+					"auth-manager.svelte.ts",
+					"config-context.ts",
+					"create-admin-context.ts",
+					"event-manager.svelte.ts",
+					"form",
+					"index.ts",
+					"key-stroke-handler.ts",
+					"layout",
+					"list",
+					"list-manager.svelte.ts",
+					"mixins.scss",
+					"screen-manager.svelte.ts",
+					"screen-type.ts",
+					"screen.svelte.ts"
+				],
+				"localDependencies": [
+					"sapphire/ui-tools"
+				],
+				"dependencies": [
+					"svelte"
+				],
+				"devDependencies": [],
+				"_imports_": {
+					"../ui-tools": "{{sapphire/ui-tools}}"
+				}
+			},
+			{
 				"name": "content-editor",
 				"directory": "blocks/sapphire/content-editor",
 				"category": "sapphire",
@@ -17,15 +53,18 @@
 					"TextBrick.svelte",
 					"content-manager.svelte.ts"
 				],
-				"localDependencies": [],
+				"localDependencies": [
+					"sapphire/ui-tools"
+				],
 				"dependencies": [
-					"@nano-forge/sapphire",
 					"@nano-forge/util",
 					"svelte-dnd-action",
 					"svelte"
 				],
 				"devDependencies": [],
-				"_imports_": {}
+				"_imports_": {
+					"../ui-tools": "{{sapphire/ui-tools}}"
+				}
 			},
 			{
 				"name": "image-editor",
@@ -38,10 +77,49 @@
 					"ImageFocusEditor.svelte",
 					"ImgEditor.svelte"
 				],
+				"localDependencies": [
+					"sapphire/ui-tools",
+					"sapphire/admin"
+				],
+				"dependencies": [
+					"@nano-forge/hammer.common"
+				],
+				"devDependencies": [],
+				"_imports_": {
+					"../ui-tools": "{{sapphire/ui-tools}}",
+					"../admin": "{{sapphire/admin}}"
+				}
+			},
+			{
+				"name": "ui-tools",
+				"directory": "blocks/sapphire/ui-tools",
+				"category": "sapphire",
+				"tests": false,
+				"subdirectory": true,
+				"list": true,
+				"files": [
+					"control-group",
+					"css-var.ts",
+					"debounce.ts",
+					"dialog",
+					"drawer",
+					"form-controls",
+					"icon.ts",
+					"index.ts",
+					"mapper.ts",
+					"menu",
+					"mixins.scss",
+					"multiselect.svelte.ts",
+					"options-button",
+					"pager",
+					"popup",
+					"toast",
+					"tools.scss",
+					"tooltip"
+				],
 				"localDependencies": [],
 				"dependencies": [
-					"@nano-forge/hammer.common",
-					"@nano-forge/sapphire"
+					"@nano-forge/util"
 				],
 				"devDependencies": [],
 				"_imports_": {}

@@ -1,0 +1,1 @@
+export type CG_SegmentProps = { grow?: boolean | number, noborder?: boolean, label?: string }

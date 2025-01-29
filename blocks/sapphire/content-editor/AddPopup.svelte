@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getPopupManager, PopupMenu, PopupMenuItem} from "@nano-forge/sapphire";
+	import {getPopupManager, PopupMenu, PopupMenuItem} from "../ui-tools";
 	import {BrickType} from "./content-manager.svelte";
 
 	let popupManager = getPopupManager();

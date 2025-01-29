@@ -1,0 +1,4 @@
+@use "tools" as *;
+$main-scope: "uitool";
+$var-scope: "item";
+@forward "tools";

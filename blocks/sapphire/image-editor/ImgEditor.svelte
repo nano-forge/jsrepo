@@ -1,7 +1,9 @@
 <script lang="ts">
-	import {Field, SelectField} from "@nano-forge/sapphire";
 	import type {AttachmentView} from "@nano-forge/hammer.common";
+	import {Field} from "../admin";
+	import {SelectField} from "../ui-tools";
 	import ImageFocusEditor from "./ImageFocusEditor.svelte";
+
 	let {metadata = $bindable(), file}: { metadata: Record<string, any>, file: AttachmentView } = $props();
 
 </script>

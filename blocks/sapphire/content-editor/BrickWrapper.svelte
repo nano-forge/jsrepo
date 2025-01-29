@@ -1,7 +1,7 @@
 <script lang="ts">
-	import {CG_Select, getPopupManager, Icon, SelectField} from "@nano-forge/sapphire";
 	import {createMapper} from "@nano-forge/util";
 	import {dragHandle} from "svelte-dnd-action";
+	import {CG_Select, getPopupManager, Icon} from "../ui-tools";
 	import AddPopup from "./AddPopup.svelte";
 	import {Brick} from "./content-manager.svelte";
 
