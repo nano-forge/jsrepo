@@ -33,7 +33,7 @@ function generateExportStatements(dir: string, baseDir: string): string {
 		} else if (file.endsWith('.svelte')) {
 			fileStatements.push(`export {default as ${fileName}} from './${rel}';`);
 		} else if (file.endsWith('.ts')) {
-			fileStatements.push(`export * from './${rel}';`);
+			fileStatements.push(`export * from './${rel.replace(/.ts$/, "")}';`);
 		}
 	});
 

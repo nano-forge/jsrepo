@@ -1,19 +1,19 @@
-export * from './api.ts';
-export * from './auth-manager.svelte.ts';
-export * from './config-context.ts';
-export * from './create-admin-context.ts';
-export * from './event-manager.svelte.ts';
-export * from './key-stroke-handler.ts';
-export * from './list-manager.svelte.ts';
-export * from './screen-manager.svelte.ts';
-export * from './screen-type.ts';
-export * from './screen.svelte.ts';
+export * from './api';
+export * from './auth-manager.svelte';
+export * from './config-context';
+export * from './create-admin-context';
+export * from './event-manager.svelte';
+export * from './key-stroke-handler';
+export * from './list-manager.svelte';
+export * from './screen-manager.svelte';
+export * from './screen-type';
+export * from './screen.svelte';
 
 // attachments
 
-export * from './attachments/attachment-manager.svelte.ts';
-export * from './attachments/sapphire-collection-view.ts';
-export * from './attachments/types.ts';
+export * from './attachments/attachment-manager.svelte';
+export * from './attachments/sapphire-collection-view';
+export * from './attachments/types';
 export {default as Attachment} from './attachments/Attachment.svelte';
 export {default as Collection} from './attachments/Collection.svelte';
 export {default as EditFileProps} from './attachments/EditFileProps.svelte';
