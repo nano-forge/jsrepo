@@ -1,8 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-
-
 // Get the root directory from the command-line arguments
 const rootDir = process.argv[2] || './src'; // Default to './src' if no argument is provided
 const outputFile = path.join(rootDir, '~imports.ts');
