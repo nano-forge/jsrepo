@@ -25,13 +25,18 @@
 					"mixins.scss",
 					"screen-manager.svelte.ts",
 					"screen-type.ts",
-					"screen.svelte.ts"
+					"screen.svelte.ts",
+					"~imports.ts"
 				],
 				"localDependencies": [
 					"sapphire/ui-tools"
 				],
 				"dependencies": [
-					"svelte"
+					"svelte",
+					"zod",
+					"@nano-forge/util",
+					"@nano-forge/hammer.common",
+					"sortablejs"
 				],
 				"devDependencies": [],
 				"_imports_": {

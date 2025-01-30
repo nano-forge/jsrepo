@@ -1,7 +1,8 @@
 <script lang="ts">
-	import {Dialog, Field, FileNameField, getDialogManager} from "$sapphire";
 	import {AttachmentView} from "@nano-forge/hammer.common";
 	import {type Component} from "svelte";
+	import {Dialog, FileNameField, getDialogManager} from "../../ui-tools";
+	import {Field} from "../index.ts";
 
 	let dialogManager = getDialogManager();
 

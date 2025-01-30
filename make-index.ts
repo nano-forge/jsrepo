@@ -23,6 +23,7 @@ function generateExportStatements(dir: string, baseDir: string): string {
 		const rel = filePath.replace(baseDir, '').replace(/^\//, "");
 
 		if (rel === "index.ts") return;
+		if (rel.startsWith("~")) return;
 		if (fs.lstatSync(filePath).isDirectory()) {
 			const folderStatements = generateExportStatements(filePath, baseDir);
 			if (folderStatements) {

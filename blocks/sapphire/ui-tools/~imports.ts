@@ -1,0 +1,10 @@
+import '@nano-forge/util';
+import 'svelte';
+import 'svelte/transition';
+import '../admin/event-manager.svelte.js';
+import '../admin/screen-manager.svelte.js';
+import '../admin/screen-type.ts';
+import '../admin/screen.svelte.js';
+import 'sortablejs';
+import 'svelte-autosize';
+import 'marked';

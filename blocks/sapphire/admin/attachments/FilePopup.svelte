@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getPopupManager, Icon, PopupMenu, PopupMenuItem} from "$sapphire";
+	import {getPopupManager, Icon, PopupMenu, PopupMenuItem} from "../../ui-tools";
 
 	let popupManager = getPopupManager();
 
