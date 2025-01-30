@@ -1,5 +1,4 @@
 <script lang="ts">
-
 	import {cssVarsString} from "../css-var.ts";
 	import {getToolTipManager} from "./tooltip-manager.svelte.js";
 	import {scale} from "svelte/transition";
