@@ -51,6 +51,7 @@ function generateExportStatementsRecursive(dir: string, baseDir: string): string
 			}
 		} else if (file.endsWith('.svelte')) {
 			fileStatements.push(`export {default as ${fileName}} from './${rel}';`);
+			fileStatements.push(`export * from './${rel}';`);
 		} else if (file.endsWith('.ts')) {
 			fileStatements.push(`export * from './${rel.replace(/.ts$/, "")}';`);
 		}
@@ -69,7 +70,6 @@ function collectImports(dir: string): void {
 
 	fs.writeFileSync(path.join(dir, "imports.txt"), importStatements);
 }
-
 function findImports(filePath: string, rootDir: string): string[] {
 	const content = fs.readFileSync(filePath, 'utf-8');
 	const importRegex = /import\s+.*\s+from\s+['"](.*)['"]/g;
@@ -87,7 +87,6 @@ function findImports(filePath: string, rootDir: string): string[] {
 
 	return imports;
 }
-
 function traverseDirectory(dir: string, rootDir: string): string[] {
 	const files = fs.readdirSync(dir);
 	const fileStatements: string[] = [];
