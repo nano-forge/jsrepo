@@ -1,0 +1,7 @@
+@gm: sapphire/ui-tools
+npm: @nano-forge/hammer.common
+npm: @nano-forge/util
+npm: sortablejs
+npm: svelte
+npm: svelte/transition
+npm: zod

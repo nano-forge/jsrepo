@@ -1,0 +1,10 @@
+@gm: sapphire/admin/event-manager.svelte.js
+@gm: sapphire/admin/screen-manager.svelte.js
+@gm: sapphire/admin/screen-type.ts
+@gm: sapphire/admin/screen.svelte.js
+npm: @nano-forge/util
+npm: marked
+npm: sortablejs
+npm: svelte
+npm: svelte-autosize
+npm: svelte/transition
