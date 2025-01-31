@@ -1,4 +1,0 @@
-@gm: sapphire/ui-tools
-npm: @nano-forge/util
-npm: svelte
-npm: svelte-dnd-action

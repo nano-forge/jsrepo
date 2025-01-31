@@ -1,0 +1,4 @@
+npm: @nano-forge/hammer.common
+npm: @nano-forge/sapphire.admin
+npm: @nano-forge/sapphire.ui-tools
+npm: svelte/reactivity/window

@@ -26,8 +26,23 @@
 		"baseUrl": ".",
 		// This sets the base directory for resolving non-relative module names
 		"paths": {
-			"$sapphire/*": [
-				"blocks/sapphire-core/*"
+			"@nano-forge/ui-tools": [
+				"modules/ui-tools/index"
+			],
+			"@nano-forge/sapphire.admin": [
+				"modules/sapphire.admin/index"
+			],
+			"@nano-forge/sapphire.content-editor": [
+				"modules/sapphire.content-editor/index"
+			],
+			"@nano-forge/sapphire.image-editor": [
+				"modules/sapphire.image-editor/index"
+			],
+			"@nano-forge/icon": [
+				"modules/icon/index"
+			],
+			"@nano-forge/awesome-icons": [
+				"modules/awesome-icons/index"
 			]
 		}
 	}

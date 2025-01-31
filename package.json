@@ -13,7 +13,9 @@
 		"build:registry": "jsrepo build"
 	},
 	"dependencies": {
+		"@clack/prompts": "^0.9.1",
 		"@nano-forge/hammer.common": "^0.0.1-dev.15",
 		"@nano-forge/util": "^0.0.2-dev.24"
-	}
+	},
+	"git-modules-owner": "nano-forge"
 }
