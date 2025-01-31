@@ -1,0 +1,20 @@
+@mixin button-reset {
+	text-align: left;
+	padding: 0;
+	border: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+@mixin scrollbar($color) {
+	::-webkit-scrollbar { width: 4px; height: 4px; position: absolute}
+	::-webkit-scrollbar-track { padding-left: 2px; background: transparent; }
+	::-webkit-scrollbar-thumb { background: transparent;border-left: 3px solid $color;}
+	::-webkit-scrollbar-corner {display: none}
+}
+
+@mixin set-var($var, $value) { #{-- + $var}: $value;}
+
+$main-scope: "mainscope";
+$var-scope: "subscope";
+@function v($variable, $fallback) { @return var(-- + $main-scope + -- + $var-scope + -- + $variable, $fallback);}

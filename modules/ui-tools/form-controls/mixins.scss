@@ -1,0 +1,51 @@
+@use "../tools" as *;
+$main-scope: "uitool--control";
+$var-scope: "item";
+@forward "../tools";
+
+@mixin input {
+	font-size: v(input-font-size, 12px);
+	line-height: v(input-font-size, 12px);
+	outline: none;
+	border: none;
+	padding: v(input-padding, 10px);
+	border-radius: v(input-border-radius, 5px);
+	color: v(input-text-color, #6a6a8d);
+	background-color: v(input-background-color, white);
+	&:not([type="checkbox"]):not([type="radio"]) {
+		width: 100%;
+	}
+	&::placeholder {
+		color: v(input-placeholder-color, #5596);
+	}
+}
+
+@mixin button($disabled:false) {
+	@if ($disabled) {
+		pointer-events: none;
+		background-color: transparent;
+		border: 1px dashed #77b;
+	} @else {
+		color: #fff;
+		background-color: #fff;
+		border: none;
+		&:hover {
+			background-color: #559;
+			color: #fff;
+		}
+	}
+	outline: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all .2s;
+	text-wrap: nowrap;
+	font-size: 16px;
+	color: #559;
+	padding: 1px 6px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	width: 40px;
+	min-width: 40px;
+	justify-content: center;
+}
