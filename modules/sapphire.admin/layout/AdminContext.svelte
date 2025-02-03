@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type {Snippet} from "svelte";
 	import {DialogContainer, PopupContainer, ToastContainer, ToolTipContainer} from "@nano-forge/ui-tools";
-	import {DrawerContainer} from "../drawer";
+	import {DrawerContainer} from "../drawer/DrawerContainer.svelte";
 	import {getEventManager} from "../event-manager.svelte";
 	import {keyStrokeHandler} from "../key-stroke-handler";
 	let {children}: { children: Snippet } = $props();
