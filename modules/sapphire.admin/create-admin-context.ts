@@ -1,7 +1,8 @@
-import {createDialogManager, createDrawerManager, createPopupManager, createToastManager, createToolTipManager, Icon} from "../ui-tools";
+import {createDialogManager,  createPopupManager, createToastManager, createToolTipManager, Icon} from "@nano-forge/ui-tools";
 import {setAuthManager} from "./auth-manager.svelte.ts";
 import {setConfig} from "./config-context.ts";
 import type {ConfigOptions} from "./config-context.ts";
+import {createDrawerManager} from "./drawer/drawer-manager.svelte.ts";
 import {createEventManager} from "./event-manager.svelte.ts";
 import {createListManager} from "./list-manager.svelte.ts";
 import {createScreenManager} from "./screen-manager.svelte.ts";

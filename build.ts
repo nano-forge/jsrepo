@@ -17,8 +17,8 @@ function buildModule(path: string) {
 	let module = path.replace(modulesDirectory, "").replace(/^\//, "");
 	console.log(`Building module ${module}`);
 	generateExportStatements(path);
-	collectImports(path)
-	console.log(`done`);
+	// collectImports(path)
+	// console.log(`done`);
 }
 
 function generateExportStatements(dir: string,): void {
@@ -80,9 +80,9 @@ function findImports(filePath: string, rootDir: string): string[] {
 		const importPath = match[1];
 		const absoluteImportPath = path.resolve(path.dirname(filePath), importPath);
 		if (!importPath.startsWith('.')) imports.push('npm: ' + importPath);
-		else if (path.relative(rootDir, absoluteImportPath).startsWith('..')) {
-			imports.push('@gm: ' + path.relative(modulesDirectory, absoluteImportPath));
-		}
+		// else if (path.relative(rootDir, absoluteImportPath).startsWith('..')) {
+		// 	imports.push('@gm: ' + path.relative(modulesDirectory, absoluteImportPath));
+		// }
 	}
 
 	return imports;

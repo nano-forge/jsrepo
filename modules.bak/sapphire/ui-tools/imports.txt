@@ -1,6 +1,0 @@
-npm: @nano-forge/util
-npm: marked
-npm: sortablejs
-npm: svelte
-npm: svelte-autosize
-npm: svelte/transition
