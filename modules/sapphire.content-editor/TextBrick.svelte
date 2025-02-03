@@ -1,5 +1,5 @@
 <script module lang="ts">
-	import {Icon} from "../ui-tools";
+	import {Icon} from "@nano-forge/ui-tools";
 	import {BrickType} from "./content-manager.svelte";
 	import Component from "./TextBrick.svelte";
 
@@ -19,7 +19,7 @@
 
 <script lang="ts">
 	import {onMount, tick} from "svelte";
-	import {TextAreaField} from "../ui-tools";
+	import {TextAreaField} from "@nano-forge/ui-tools";
 	import {Brick} from "./content-manager.svelte"
 
 	const {brick}: { brick: Brick<VALUE, OPTIONS, DELEGATE> } = $props();

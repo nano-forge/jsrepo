@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type {AttachmentView} from "@nano-forge/hammer.common";
-	import {cssVarsString} from "../ui-tools";
+	import {cssVarsString} from "@nano-forge/ui-tools";
 	import {innerHeight, innerWidth} from "svelte/reactivity/window";
 
 	type Dimension = {

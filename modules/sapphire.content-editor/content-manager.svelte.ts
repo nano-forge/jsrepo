@@ -1,5 +1,5 @@
 import {type Component} from "svelte";
-import type {IconType} from "../ui-tools";
+import type {IconType} from "@nano-forge/ui-tools";
 
 export type BrickData<SPEC extends Record<string, any> = Record<string, any>> = { type: string, value: SPEC }
 type NonTypedBrickData<SPEC extends Record<string, any> = Record<string, any>> = Omit<BrickData<SPEC>, "type"> & { type?: string };
