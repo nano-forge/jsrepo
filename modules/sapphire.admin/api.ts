@@ -130,8 +130,8 @@ export namespace Api {
 			return await this.call(this.endpoint("list.get"), {
 				page: page,
 				pageSize: pageSize,
-				search: options?.search ?? "",
-				filter: options?.filter ?? null,
+				quickSearch: options?.quickSearch ?? "",
+				search: options?.search ?? null,
 				order: options?.order ?? null
 			}).catch(apiErrorHandler);
 		}
@@ -235,8 +235,8 @@ export namespace Api {
 	 * @property {string} [order] - The order criteria.
 	 */
 	export type ListOptions = {
-		search?: string,
-		filter?: Record<string, any>,
+		quickSearch?: string,
+		search?: Record<string, any>,
 		order?: string
 	}
 
