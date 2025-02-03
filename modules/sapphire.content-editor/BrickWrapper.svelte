@@ -22,20 +22,20 @@
 		<div class="handle">
 			<i class={Icon.light("grip-dots")} use:dragHandle></i>
 			<div>
-				<i class={brick.brickDef.icon.with(Icon.FW)}></i>
+				<i class={brick.brickDef.icon.with(Icon.FW).class}></i>
 				<b>{brick.brickDef.label}</b>
 			</div>
 			{#if brick.brickDef.modifiers}
 				<CG_Select bind:value={brick.value.mod} options={createMapper(brick.brickDef.modifiers.join(',')).map} placeholder="Select a modifier"/>
 			{/if}
-			<i class={Icon.light("times")} class:button={true} onclick={()=>brick.remove()}></i>
+			<i class={Icon.light("times").class} class:button={true} onclick={()=>brick.remove()}></i>
 		</div>
 		<div class="content">
 			<Component brick={brick}/>
 		</div>
 	</div>
 	<div class="add" onclick={(event)=>add(brick, event)}>
-		<i class={Icon.solid("plus")}></i>
+		<i class={Icon.solid("plus").class}></i>
 	</div>
 </main>
 
