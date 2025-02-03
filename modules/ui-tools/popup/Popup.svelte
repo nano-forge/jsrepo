@@ -1,6 +1,6 @@
 <script lang="ts">
-	import {cssVarsString} from "../css-var.ts";
-	import {getPopupManager} from "./popup-manager.svelte.js";
+	import {cssVarsString} from "../css-var";
+	import {getPopupManager} from "./popup-manager.svelte";
 
 	let {children}: { children: any } = $props();
 	let popupManager = getPopupManager();

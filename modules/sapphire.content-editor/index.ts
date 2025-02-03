@@ -1,4 +1,4 @@
-export * from './content-manager.svelte.js';
+export * from './content-manager.svelte';
 export {default as AddPopup} from './AddPopup.svelte';
 export * from './AddPopup.svelte';
 export {default as BrickWrapper} from './BrickWrapper.svelte';

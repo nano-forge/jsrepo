@@ -1,7 +1,7 @@
 <script lang="ts">
 	import CG_Segment from "./CG_Segment.svelte";
-	import type {CG_SegmentProps} from "./types.ts";
-	import {Icon} from "../icon.ts";
+	import type {CG_SegmentProps} from "./types";
+	import {Icon} from "../icon";
 
 	let {icon, grow = false, noborder = false, label}: { icon: Icon } & CG_SegmentProps = $props();
 

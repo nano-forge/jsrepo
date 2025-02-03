@@ -1,4 +1,4 @@
-import type {EventManager} from "./event-manager.svelte.js";
+import type {EventManager} from "./event-manager.svelte";
 
 export let KeyStrokeEvents = {
 	SAVE_KEYSTROKE: Symbol(),

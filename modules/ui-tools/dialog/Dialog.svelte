@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getDialogManager} from "./dialog-manager.svelte.js";
+	import {getDialogManager} from "./dialog-manager.svelte";
 
 	let {title, children, buttons, closeable = true, onCloseData}: { title?: string, children?: any, buttons?: any, closeable?: boolean, onCloseData?: any } = $props();
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 
-	import {cssVarsString} from "../css-var.ts";
-	import {Icon} from "../icon.ts";
+	import {cssVarsString} from "../css-var";
+	import {Icon} from "../icon";
 	import type {ToString} from "@nano-forge/util";
 
 	let {icon, onclick, dark = false, pos = {top: 12, right: 12}, alwaysVisible = false}: {

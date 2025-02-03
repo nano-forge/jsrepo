@@ -1,6 +1,6 @@
 <script lang="ts" generics="T">
-	import {getEventManager} from "../event-manager.svelte.js";
-	import {KeyStrokeEvents} from "../key-stroke-handler.ts";
+	import {getEventManager} from "../event-manager.svelte";
+	import {KeyStrokeEvents} from "../key-stroke-handler";
 
 	let {immersiveStatus = $bindable()}: { immersiveStatus: boolean } = $props();
 

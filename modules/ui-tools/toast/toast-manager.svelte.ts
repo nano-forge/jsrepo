@@ -1,4 +1,4 @@
-import {Icon} from "../icon.ts";
+import {Icon} from "../icon";
 import {getContext, onDestroy, setContext} from "svelte";
 
 type Toast = {

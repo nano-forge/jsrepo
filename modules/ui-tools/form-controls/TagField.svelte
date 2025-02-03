@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {createMapper, Mapper} from "../mapper.ts";
+	import {createMapper, Mapper} from "../mapper";
 	import Sortable, {type SortableEvent} from "sortablejs";
 	import {onMount, tick, untrack} from "svelte";
 	import Tag from "./util/Tag.svelte";

@@ -1,9 +1,9 @@
 <script lang="ts">
 	import type {AttachmentView} from "@nano-forge/hammer.common";
-	import {getPopupManager, OptionsButton, tooltip} from "../../ui-tools";
-	import type {CollectionOptions} from "./attachment-manager.svelte.js";
+	import {getPopupManager, OptionsButton, tooltip} from "@nano-forge/ui-tools";
+	import type {CollectionOptions} from "./attachment-manager.svelte";
 	import FilePopup from "./FilePopup.svelte";
-	import {SapphireCollectionView} from "./sapphire-collection-view.ts";
+	import {SapphireCollectionView} from "./sapphire-collection-view";
 
 
 	let {selected = 0, file, action, options}: {

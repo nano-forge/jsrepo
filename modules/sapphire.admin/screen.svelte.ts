@@ -1,6 +1,6 @@
-import type {ScreenManager} from "./screen-manager.svelte.js";
-import {ScreenType} from "./screen-type.ts";
-import {Icon} from "../ui-tools";
+import type {ScreenManager} from "./screen-manager.svelte";
+import {ScreenType} from "./screen-type";
+import {Icon} from "@nano-forge/ui-tools";
 import {getContext, setContext} from "svelte";
 
 export class Screen {

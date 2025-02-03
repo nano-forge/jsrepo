@@ -1,6 +1,6 @@
 import {type Component, getContext, setContext} from "svelte";
-import {Api} from "../api.ts";
-import type {FileCollection} from "./types.ts";
+import {Api} from "../api";
+import type {FileCollection} from "./types";
 
 export class CollectionOptions {
 	public label: string

@@ -1,6 +1,6 @@
 <script lang="ts">
 	let {errors}: { errors: Record<string, Array<{ message: string }>> | undefined } = $props();
-	import {Icon} from "../../ui-tools";
+	import {Icon} from "@nano-forge/ui-tools";
 	import {slide} from "svelte/transition";
 
 	let open: boolean = $state(true);

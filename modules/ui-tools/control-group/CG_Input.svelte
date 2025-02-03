@@ -1,7 +1,7 @@
 <script lang="ts">
 	import CG_Segment from "./CG_Segment.svelte";
-	import type {CG_SegmentProps} from "./types.ts";
-	import {debounce} from "../debounce.ts";
+	import type {CG_SegmentProps} from "./types";
+	import {debounce} from "../debounce";
 
 	let {value = $bindable(), placeholder = "", debounceTime, grow = false, noborder = false, label, disabled}: {
 		value: string,

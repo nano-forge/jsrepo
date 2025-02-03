@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type {CG_SegmentProps} from "./types.ts";
-	import {cssVarsString} from "../css-var.ts";
-	import {tooltip} from "../tooltip/tooltip-action.svelte.js";
+	import type {CG_SegmentProps} from "./types";
+	import {cssVarsString} from "../css-var";
+	import {tooltip} from "../tooltip/tooltip-action.svelte";
 	import type {Snippet} from "svelte";
 	import {slide} from "svelte/transition";
 

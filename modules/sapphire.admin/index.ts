@@ -1,19 +1,19 @@
-export * from './api.ts';
-export * from './auth-manager.svelte.js';
-export * from './config-context.ts';
-export * from './create-admin-context.ts';
-export * from './event-manager.svelte.js';
-export * from './key-stroke-handler.ts';
-export * from './list-manager.svelte.js';
-export * from './screen-manager.svelte.js';
-export * from './screen-type.ts';
-export * from './screen.svelte.js';
+export * from './api';
+export * from './auth-manager.svelte';
+export * from './config-context';
+export * from './create-admin-context';
+export * from './event-manager.svelte';
+export * from './key-stroke-handler';
+export * from './list-manager.svelte';
+export * from './screen-manager.svelte';
+export * from './screen-type';
+export * from './screen.svelte';
 
 // attachments
 
-export * from './attachments/attachment-manager.svelte.js';
-export * from './attachments/sapphire-collection-view.ts';
-export * from './attachments/types.ts';
+export * from './attachments/attachment-manager.svelte';
+export * from './attachments/sapphire-collection-view';
+export * from './attachments/types';
 export {default as Attachment} from './attachments/Attachment.svelte';
 export * from './attachments/Attachment.svelte';
 export {default as Collection} from './attachments/Collection.svelte';
@@ -27,7 +27,7 @@ export * from './attachments/FilePopup.svelte';
 
 // drawer
 
-export * from './drawer/drawer-manager.svelte.js';
+export * from './drawer/drawer-manager.svelte';
 export {default as Drawer} from './drawer/Drawer.svelte';
 export * from './drawer/Drawer.svelte';
 export {default as DrawerContainer} from './drawer/DrawerContainer.svelte';

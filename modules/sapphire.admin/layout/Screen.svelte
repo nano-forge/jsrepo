@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {Screen, setScreen} from "../screen.svelte.js";
+	import {Screen, setScreen} from "../screen.svelte";
 
 	let {screen}: { screen: Screen } = $props();
 	setScreen(screen)

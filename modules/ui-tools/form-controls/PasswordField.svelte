@@ -1,6 +1,6 @@
 <script lang="ts">
-	import {Icon} from "../icon.ts";
-	import {tooltip} from "../tooltip/tooltip-action.svelte.js";
+	import {Icon} from "../icon";
+	import {tooltip} from "../tooltip/tooltip-action.svelte";
 
 	let {value = $bindable(), placeholder = ""}: {
 		value: string | number | undefined,

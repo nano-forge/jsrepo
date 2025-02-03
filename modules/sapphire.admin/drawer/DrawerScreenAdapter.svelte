@@ -1,10 +1,10 @@
 <script lang="ts">
 
-	import {getEventManager} from "../event-manager.svelte.js";
-	import {ScreenManager} from "../screen-manager.svelte.js";
-	import {ScreenTypeSingle} from "../screen-type.ts";
-	import {Screen, setScreen} from "../screen.svelte.js";
-	import {getDrawerManager} from "./drawer-manager.svelte.js";
+	import {getEventManager} from "../event-manager.svelte";
+	import {ScreenManager} from "../screen-manager.svelte";
+	import {ScreenTypeSingle} from "../screen-type";
+	import {Screen, setScreen} from "../screen.svelte";
+	import {getDrawerManager} from "./drawer-manager.svelte";
 	import type {Component} from "svelte";
 
 	let drawerManager = getDrawerManager();

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import {getScreenManager} from "../screen-manager.svelte.js";
-	import {Screen} from "../screen.svelte.js";
-	import {Icon} from "../../ui-tools";
+	import {getScreenManager} from "../screen-manager.svelte";
+	import {Screen} from "../screen.svelte";
+	import {Icon} from "@nano-forge/ui-tools";
 	import {blur, fade} from "svelte/transition";
 
 	let screenManager = getScreenManager();

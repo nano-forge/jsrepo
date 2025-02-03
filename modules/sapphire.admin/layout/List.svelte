@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getListManager} from "../list-manager.svelte.js";
+	import {getListManager} from "../list-manager.svelte";
 
 	let {name, children}: { name: string | symbol, children: any } = $props();
 

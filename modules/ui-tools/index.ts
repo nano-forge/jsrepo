@@ -1,12 +1,12 @@
-export * from './css-var.ts';
-export * from './debounce.ts';
-export * from './icon.ts';
-export * from './mapper.ts';
-export * from './multiselect.svelte.js';
+export * from './css-var';
+export * from './debounce';
+export * from './icon';
+export * from './mapper';
+export * from './multiselect.svelte';
 
 // control-group
 
-export * from './control-group/types.ts';
+export * from './control-group/types';
 export {default as CG_Button} from './control-group/CG_Button.svelte';
 export * from './control-group/CG_Button.svelte';
 export {default as CG_Icon} from './control-group/CG_Icon.svelte';
@@ -24,7 +24,7 @@ export * from './control-group/ControlGroup.svelte';
 
 // dialog
 
-export * from './dialog/dialog-manager.svelte.js';
+export * from './dialog/dialog-manager.svelte';
 export {default as Dialog} from './dialog/Dialog.svelte';
 export * from './dialog/Dialog.svelte';
 export {default as DialogContainer} from './dialog/DialogContainer.svelte';
@@ -93,7 +93,7 @@ export * from './pager/Pager.svelte';
 
 // popup
 
-export * from './popup/popup-manager.svelte.js';
+export * from './popup/popup-manager.svelte';
 export {default as Popup} from './popup/Popup.svelte';
 export * from './popup/Popup.svelte';
 export {default as PopupContainer} from './popup/PopupContainer.svelte';
@@ -105,13 +105,13 @@ export * from './popup/PopupMenuItem.svelte';
 
 // toast
 
-export * from './toast/toast-manager.svelte.js';
+export * from './toast/toast-manager.svelte';
 export {default as ToastContainer} from './toast/ToastContainer.svelte';
 export * from './toast/ToastContainer.svelte';
 
 // tooltip
 
-export * from './tooltip/tooltip-action.svelte.js';
-export * from './tooltip/tooltip-manager.svelte.js';
+export * from './tooltip/tooltip-action.svelte';
+export * from './tooltip/tooltip-manager.svelte';
 export {default as ToolTipContainer} from './tooltip/ToolTipContainer.svelte';
 export * from './tooltip/ToolTipContainer.svelte';

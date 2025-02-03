@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {Icon} from "../icon.ts";
+	import {Icon} from "../icon";
 	import MenuGroup from "./MenuGroup.svelte";
 
 	let {label, icon, children, onclick, open}: {

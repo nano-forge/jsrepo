@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type {ToString} from "@nano-forge/util";
 	import {type Snippet, untrack} from "svelte";
-	import {CG_Button, CG_Icon, CG_Input, CG_Select, ControlGroup, createMapper, getToastManager, Icon, Pager} from "../../ui-tools";
-	import {Api} from "../api.ts";
-	import {getAuthManager} from "../auth-manager.svelte.js";
-	import {getEventManager} from "../event-manager.svelte.js";
+	import {CG_Button, CG_Icon, CG_Input, CG_Select, ControlGroup, createMapper, getToastManager, Icon, Pager} from "@nano-forge/ui-tools";
+	import {Api} from "../api";
+	import {getAuthManager} from "../auth-manager.svelte";
+	import {getEventManager} from "../event-manager.svelte";
 
 	type Props = {
 		Card: Snippet<[Api.Item<any>]>,

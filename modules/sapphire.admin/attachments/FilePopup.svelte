@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getPopupManager, Icon, PopupMenu, PopupMenuItem} from "../../ui-tools";
+	import {getPopupManager, Icon, PopupMenu, PopupMenuItem} from "@nano-forge/ui-tools";
 
 	let popupManager = getPopupManager();
 

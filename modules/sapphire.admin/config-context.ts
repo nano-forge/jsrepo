@@ -1,5 +1,5 @@
 import {getContext, setContext} from "svelte";
-import type {AuthManagerInterface} from "./auth-manager.svelte.js";
+import type {AuthManagerInterface} from "./auth-manager.svelte";
 
 let defaultConfig = {
 	listSize: 50,

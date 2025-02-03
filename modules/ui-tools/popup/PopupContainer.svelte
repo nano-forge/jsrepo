@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getPopupManager} from "./popup-manager.svelte.js";
+	import {getPopupManager} from "./popup-manager.svelte";
 	import Popup from "./Popup.svelte";
 	import {onMount} from "svelte";
 

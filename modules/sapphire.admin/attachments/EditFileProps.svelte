@@ -1,8 +1,8 @@
 <script lang="ts">
 	import {AttachmentView} from "@nano-forge/hammer.common";
 	import {type Component} from "svelte";
-	import {Dialog, FileNameField, getDialogManager} from "../../ui-tools";
-	import {Field} from "../index.ts";
+	import {Dialog, FileNameField, getDialogManager} from "@nano-forge/ui-tools";
+	import {Field} from "../index";
 
 	let dialogManager = getDialogManager();
 

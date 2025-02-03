@@ -1,10 +1,10 @@
 import '@nano-forge/util';
 import 'svelte';
 import 'svelte/transition';
-import '../sapphire.admin/event-manager.svelte.js';
-import '../sapphire.admin/screen-manager.svelte.js';
-import '../sapphire.admin/screen-type.ts';
-import '../sapphire.admin/screen.svelte.js';
+import '../sapphire.admin/event-manager.svelte';
+import '../sapphire.admin/screen-manager.svelte';
+import '../sapphire.admin/screen-type';
+import '../sapphire.admin/screen.svelte';
 import 'sortablejs';
 import 'svelte-autosize';
 import 'marked';

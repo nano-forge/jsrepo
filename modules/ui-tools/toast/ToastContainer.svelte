@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getToastManager} from "./toast-manager.svelte.js";
+	import {getToastManager} from "./toast-manager.svelte";
 	import {blur, slide} from "svelte/transition";
 
 	let toastManager = getToastManager();

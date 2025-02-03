@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {onMount} from "svelte";
 	import {Dialog} from "@nano-forge/ui-tools";
-	import {AttachmentManager, setAttachmentManager} from "./attachment-manager.svelte.js";
+	import {AttachmentManager, setAttachmentManager} from "./attachment-manager.svelte";
 	import Collection from "./Collection.svelte";
 
 	let {attachmentManager}: { attachmentManager: AttachmentManager } = $props();

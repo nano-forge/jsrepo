@@ -3,7 +3,7 @@
 	import {dragHandle} from "svelte-dnd-action";
 	import {CG_Select, getPopupManager, Icon} from "../ui-tools";
 	import AddPopup from "./AddPopup.svelte";
-	import {Brick} from "./content-manager.svelte.js";
+	import {Brick} from "./content-manager.svelte";
 
 	let {brick}: { brick: Brick } = $props();
 	let Component = brick.brickDef.component;

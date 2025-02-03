@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getDialogManager} from "./dialog-manager.svelte.js";
+	import {getDialogManager} from "./dialog-manager.svelte";
 	import {onMount, untrack} from "svelte";
 
 	let dialogManager = getDialogManager();

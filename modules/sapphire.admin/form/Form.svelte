@@ -1,12 +1,12 @@
 <script lang="ts">
 	import {type Snippet} from "svelte";
-	import {getToastManager, Icon, CG_Button, ControlGroup} from "../../ui-tools";
-	import type {Api} from "../api.ts";
-	import {getAuthManager} from "../auth-manager.svelte.js";
-	import {getConfig} from "../config-context.ts";
-	import {getEventManager} from "../event-manager.svelte.js";
-	import {KeyStrokeEvents} from "../key-stroke-handler.ts";
-	import {getScreen} from "../screen.svelte.js";
+	import {getToastManager, Icon, CG_Button, ControlGroup} from "@nano-forge/ui-tools";
+	import type {Api} from "../api";
+	import {getAuthManager} from "../auth-manager.svelte";
+	import {getConfig} from "../config-context";
+	import {getEventManager} from "../event-manager.svelte";
+	import {KeyStrokeEvents} from "../key-stroke-handler";
+	import {getScreen} from "../screen.svelte";
 	import FormErrors from "./FormErrors.svelte";
 
 	let {

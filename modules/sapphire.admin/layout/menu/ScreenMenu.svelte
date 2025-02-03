@@ -1,7 +1,7 @@
 <script lang="ts">
-	import {Menu} from "../../../ui-tools";
-	import {getScreenManager} from "../../screen-manager.svelte.ts";
-	import type {ScreenType} from "../../screen-type.ts";
+	import {Menu} from "@nano-forge/ui-tools";
+	import {getScreenManager} from "../../screen-manager.svelte";
+	import type {ScreenType} from "../../screen-type";
 
 	const screenManager = getScreenManager();
 	let {label, icon, screen}: {

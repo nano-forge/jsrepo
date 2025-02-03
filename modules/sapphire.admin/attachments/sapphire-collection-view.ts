@@ -1,5 +1,5 @@
 import {type AttachmentView, CollectionView} from "@nano-forge/hammer.common";
-import {Icon, type IconType} from "../../ui-tools";
+import {Icon, type IconType} from "@nano-forge/ui-tools";
 
 export class SapphireCollectionView extends CollectionView {
 	static namedImg = "SAPPHIRE";

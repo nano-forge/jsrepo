@@ -2,12 +2,12 @@
 
 	import type {AttachmentView} from "@nano-forge/hammer.common";
 	import Sortable, {type SortableEvent} from 'sortablejs';
-	import {getDialogManager, Icon, Multiselect} from "../../ui-tools";
-	import {CollectionOptions, getAttachmentManager} from "./attachment-manager.svelte.js";
+	import {getDialogManager, Icon, Multiselect} from "@nano-forge/ui-tools";
+	import {CollectionOptions, getAttachmentManager} from "./attachment-manager.svelte";
 	import EditFileProps from "./EditFileProps.svelte";
 	import File from "./File.svelte";
-	import {SapphireCollectionView} from "./sapphire-collection-view.ts";
-	import type {FileCollection} from "./types.ts";
+	import {SapphireCollectionView} from "./sapphire-collection-view";
+	import type {FileCollection} from "./types";
 
 	let {collection, options}: { collection: FileCollection, options: CollectionOptions } = $props();
 

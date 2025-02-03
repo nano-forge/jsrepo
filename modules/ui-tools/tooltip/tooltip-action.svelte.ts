@@ -1,4 +1,4 @@
-import {getToolTipManager} from "./tooltip-manager.svelte.js";
+import {getToolTipManager} from "./tooltip-manager.svelte";
 
 
 export function tooltip(node: HTMLElement, label: string | undefined): ({ destroy: () => void }) {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getDrawerManager} from "./drawer-manager.svelte.js";
+	import {getDrawerManager} from "./drawer-manager.svelte";
 	import Drawer from "./Drawer.svelte";
 
 	let drawerManager = getDrawerManager()

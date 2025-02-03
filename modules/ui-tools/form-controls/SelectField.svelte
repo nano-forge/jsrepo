@@ -1,6 +1,6 @@
 <script lang="ts">
 
-	import {createMapper, Mapper, type MapperOptions} from "../mapper.ts";
+	import {createMapper, Mapper, type MapperOptions} from "../mapper";
 	import {onMount} from "svelte";
 
 	let {value = $bindable(), options, convertOptions, placeholder}: {

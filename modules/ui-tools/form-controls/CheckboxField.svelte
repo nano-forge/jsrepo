@@ -1,6 +1,6 @@
 <script lang="ts">
 
-	import {createMapper, type MapperInput} from "../mapper.ts";
+	import {createMapper, type MapperInput} from "../mapper";
 	import Switch from "./util/Switch.svelte";
 
 	type Option = { key: string, label: string, selected: boolean };

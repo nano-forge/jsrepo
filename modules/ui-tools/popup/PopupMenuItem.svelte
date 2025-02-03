@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {Icon} from "../icon.ts";
+	import {Icon} from "../icon";
 
 	let {icon, label, onclick, disabled = false}: { icon?: Icon, label: string, onclick: () => void, disabled?: boolean } = $props();
 </script>

@@ -1,11 +1,11 @@
 import {createDialogManager,  createPopupManager, createToastManager, createToolTipManager, Icon} from "@nano-forge/ui-tools";
-import {setAuthManager} from "./auth-manager.svelte.ts";
-import {setConfig} from "./config-context.ts";
-import type {ConfigOptions} from "./config-context.ts";
-import {createDrawerManager} from "./drawer/drawer-manager.svelte.ts";
-import {createEventManager} from "./event-manager.svelte.ts";
-import {createListManager} from "./list-manager.svelte.ts";
-import {createScreenManager} from "./screen-manager.svelte.ts";
+import {setAuthManager} from "./auth-manager.svelte";
+import {setConfig} from "./config-context";
+import type {ConfigOptions} from "./config-context";
+import {createDrawerManager} from "./drawer/drawer-manager.svelte";
+import {createEventManager} from "./event-manager.svelte";
+import {createListManager} from "./list-manager.svelte";
+import {createScreenManager} from "./screen-manager.svelte";
 
 
 export function createAdminContext(config:ConfigOptions){

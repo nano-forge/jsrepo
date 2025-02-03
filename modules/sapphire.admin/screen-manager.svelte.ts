@@ -1,6 +1,6 @@
-import {EventManager} from "./event-manager.svelte.js";
-import {ScreenType} from "./screen-type.ts";
-import {Screen} from "./screen.svelte.js";
+import {EventManager} from "./event-manager.svelte";
+import {ScreenType} from "./screen-type";
+import {Screen} from "./screen.svelte";
 import {getContext, setContext} from "svelte";
 
 

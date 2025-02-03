@@ -1,11 +1,11 @@
 <script lang="ts">
-	import {MenuGroup} from "../../ui-tools";
-	import {getConfig} from "../config-context.ts";
+	import {MenuGroup} from "@nano-forge/ui-tools";
+	import {getConfig} from "../config-context";
 	import ImmersiveBar from "./ImmersiveBar.svelte";
 	import Screen from "./Screen.svelte";
 	import Tab from "./Tab.svelte";
-	import {getListManager} from "../list-manager.svelte.js";
-	import {getScreenManager} from "../screen-manager.svelte.js";
+	import {getListManager} from "../list-manager.svelte";
+	import {getScreenManager} from "../screen-manager.svelte";
 	import {type Snippet} from "svelte";
 	import {slide} from "svelte/transition";
 

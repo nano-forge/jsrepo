@@ -1,6 +1,6 @@
 <script lang="ts">
-	import {Menu} from "../../../ui-tools";
-	import {getListManager} from "../../list-manager.svelte.ts";
+	import {Menu} from "@nano-forge/ui-tools";
+	import {getListManager} from "../../list-manager.svelte";
 
 	const listManager = getListManager();
 	let {label, icon, list}: {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {getDrawerManager} from "./drawer-manager.svelte.js";
+	import {getDrawerManager} from "./drawer-manager.svelte";
 	import {onMount} from "svelte";
 
 	let {children, onCloseData}: { children: any, onCloseData?: any } = $props();

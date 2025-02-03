@@ -1,6 +1,6 @@
 <script lang="ts">
 	import CG_Segment from "./CG_Segment.svelte";
-	import type {CG_SegmentProps} from "./types.ts";
+	import type {CG_SegmentProps} from "./types";
 
 	let {value = $bindable(), min, max, grow = false, noborder = false, label, disabled}: {
 		value: number,

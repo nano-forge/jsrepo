@@ -2,7 +2,7 @@
 	import type {NonEmptyArray} from "@nano-forge/util";
 	import {dragHandleZone} from "svelte-dnd-action";
 	import Brick from "./BrickWrapper.svelte";
-	import {type BrickData, BrickType, ContentManager} from "./content-manager.svelte.js";
+	import {type BrickData, BrickType, ContentManager} from "./content-manager.svelte";
 
 	let {value = $bindable(), bank, blank}: { value: Array<BrickData>, bank: BrickType[], blank: NonEmptyArray<BrickData> } = $props();
 	if (value.length === 0) value.push(...blank);

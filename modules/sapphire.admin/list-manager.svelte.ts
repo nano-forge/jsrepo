@@ -1,5 +1,5 @@
 import {getContext, setContext} from "svelte";
-import type {EventManager} from "./event-manager.svelte.ts";
+import type {EventManager} from "./event-manager.svelte";
 
 
 export class ListManager {

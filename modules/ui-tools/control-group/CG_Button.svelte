@@ -1,7 +1,7 @@
 <script lang="ts">
 	import CG_Segment from "./CG_Segment.svelte";
-	import type {CG_SegmentProps} from "./types.ts";
-	import type {Icon} from "../icon.ts";
+	import type {CG_SegmentProps} from "./types";
+	import type {Icon} from "../icon";
 
 	let {label = "", icon, disabled, onclick, pressed = false, grow = false, noborder = false, highlighted}: {
 		label?: string,
