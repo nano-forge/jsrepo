@@ -11,15 +11,15 @@
 		label: string,
 		icon?: ToString<Icon>,
 		Buttons?: Snippet,
-		Filter?: Snippet,
+		Search?: Snippet,
 		api: Api.AnyApi,
 		pageSize: number
 		hasQuickSearch?: boolean
 		reloadOn?: symbol | Array<symbol>,
 		sorting: Array<string> | Record<string, string>,
-		filter?: Record<string, any>,
+		search?: Record<string, any>,
 	}
-	let {api, Card, label, icon = Icon.light("list"), pageSize = 50, hasQuickSearch = false, reloadOn, Buttons, Filter, sorting, filter = $bindable()}: Props = $props();
+	let {api, Card, label, icon = Icon.light("list"), pageSize = 50, hasQuickSearch = false, reloadOn, Buttons, Search, sorting, search = $bindable()}: Props = $props();
 
 	let toastManager = getToastManager();
 	let authManager = getAuthManager();
@@ -42,7 +42,7 @@
 		if (toPage >= pages) toPage = pages - 1;
 		if (toPage < 0) toPage = 0;
 		try {
-			list = await api.getList(toPage, pageSize, {search: quickSearch, filter: filter, order});
+			list = await api.getList(toPage, pageSize, {quickSearch: quickSearch, search: search, order});
 			// list.items.forEach(x => x.data["id"] = Math.random())
 
 			pages = Math.ceil(list!.count / pageSize);
@@ -67,7 +67,7 @@
 
 	$effect(() => {
 		quickSearch;
-		$state.snapshot(filter)
+		$state.snapshot(search)
 		order;
 		untrack(() => goToPage(0))
 	})
@@ -83,9 +83,9 @@
 				{/if}
 				<div class="label">{label}</div>
 				<div class="buttons">
-					{#if Buttons || !hasQuickSearch && (Filter || sorting)}
+					{#if Buttons || !hasQuickSearch && (Search || sorting)}
 						<ControlGroup small>
-							{#if sorting || Filter}
+							{#if sorting || Search}
 								<CG_Button pressed={showAdvancedOptions} icon={Icon.light("rectangle-list").color("cyan")} onclick={()=>showAdvancedOptions = !showAdvancedOptions} label="Advanced options"/>
 							{/if}
 							{#if Buttons}
@@ -104,16 +104,16 @@
 					</ControlGroup>
 				</div>
 			{/if}
+			{#if sorting}
+				<ControlGroup small>
+					<CG_Icon icon={Icon.light("arrow-down-a-z").color("cyan")} noborder label="Sorting"/>
+					<CG_Select options={sortingKeyLabel} bind:value={order} placeholder="Sorting" grow/>
+				</ControlGroup>
+			{/if}
 
 			<div class="advanced-options" hidden={!showAdvancedOptions}>
-				{#if Filter}
-					{@render Filter()}
-				{/if}
-				{#if sorting}
-					<ControlGroup small>
-						<CG_Icon icon={Icon.light("arrow-down-a-z").color("cyan")} noborder label="Sorting"/>
-						<CG_Select options={sortingKeyLabel} bind:value={order} placeholder="Sorting" grow/>
-					</ControlGroup>
+				{#if Search}
+					{@render Search()}
 				{/if}
 			</div>
 
