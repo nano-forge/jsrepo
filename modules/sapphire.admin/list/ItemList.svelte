@@ -1,7 +1,7 @@
 <script lang="ts">
+	import {CG_Button, CG_Icon, CG_Input, CG_Select, ControlGroup, ControlTower, createMapper, getToastManager, Icon, Pager} from "@nano-forge/ui-tools";
 	import type {ToString} from "@nano-forge/util";
 	import {type Snippet, untrack} from "svelte";
-	import {CG_Button, CG_Icon, CG_Input, CG_Select, ControlGroup, createMapper, getToastManager, Icon, Pager} from "@nano-forge/ui-tools";
 	import {Api} from "../api";
 	import {getAuthManager} from "../auth-manager.svelte";
 	import {getEventManager} from "../event-manager.svelte";
@@ -96,19 +96,23 @@
 				</div>
 			</div>
 
-			{#if hasQuickSearch}
-				<div class="quickSearch">
-					<ControlGroup small>
-						<CG_Icon icon={Icon.light("magnifying-glass").color("cyan")} noborder label="quick search"/>
-						<CG_Input bind:value={quickSearch} debounceTime={300} placeholder="quick search" grow/>
-					</ControlGroup>
-				</div>
-			{/if}
-			{#if sorting}
-				<ControlGroup small>
-					<CG_Icon icon={Icon.light("arrow-down-a-z").color("cyan")} noborder label="Sorting"/>
-					<CG_Select options={sortingKeyLabel} bind:value={order} placeholder="Sorting" grow/>
-				</ControlGroup>
+			{#if sorting || hasQuickSearch}
+				<ControlTower>
+					{#if hasQuickSearch}
+						<div class="quickSearch">
+							<ControlGroup small>
+								<CG_Icon icon={Icon.light("magnifying-glass").color("cyan")} noborder label="quick search"/>
+								<CG_Input bind:value={quickSearch} debounceTime={300} placeholder="quick search" grow/>
+							</ControlGroup>
+						</div>
+					{/if}
+					{#if sorting}
+						<ControlGroup small>
+							<CG_Icon icon={Icon.light("arrow-down-a-z").color("cyan")} noborder label="Sorting"/>
+							<CG_Select options={sortingKeyLabel} bind:value={order} placeholder="Sorting" grow/>
+						</ControlGroup>
+					{/if}
+				</ControlTower>
 			{/if}
 
 			<div class="advanced-options" hidden={!showAdvancedOptions}>
