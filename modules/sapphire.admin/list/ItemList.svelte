@@ -99,12 +99,10 @@
 			{#if sorting || hasQuickSearch}
 				<ControlTower>
 					{#if hasQuickSearch}
-						<div class="quickSearch">
-							<ControlGroup small>
-								<CG_Icon icon={Icon.light("magnifying-glass").color("cyan")} noborder label="quick search"/>
-								<CG_Input bind:value={quickSearch} debounceTime={300} placeholder="quick search" grow/>
-							</ControlGroup>
-						</div>
+						<ControlGroup small>
+							<CG_Icon icon={Icon.light("magnifying-glass").color("cyan")} noborder label="quick search"/>
+							<CG_Input bind:value={quickSearch} debounceTime={300} placeholder="quick search" grow/>
+						</ControlGroup>
 					{/if}
 					{#if sorting}
 						<ControlGroup small>
