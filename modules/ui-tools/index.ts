@@ -21,6 +21,8 @@ export {default as CG_Select} from './control-group/CG_Select.svelte';
 export * from './control-group/CG_Select.svelte';
 export {default as ControlGroup} from './control-group/ControlGroup.svelte';
 export * from './control-group/ControlGroup.svelte';
+export {default as ControlTower} from './control-group/ControlTower.svelte';
+export * from './control-group/ControlTower.svelte';
 
 // dialog
 
