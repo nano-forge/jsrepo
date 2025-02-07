@@ -45,7 +45,7 @@
 	});
 </script>
 
-<main class:no-border={noBorder} class:invalid={!valid} data-orientation={orientation} class:row={orientation==="row"} class:column={orientation === "column"}>
+<main transition:slide class:no-border={noBorder} class:invalid={!valid} data-orientation={orientation} class:row={orientation==="row"} class:column={orientation === "column"}>
 	{#if label}
 		<div class="label">
 			{label}

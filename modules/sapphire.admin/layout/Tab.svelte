@@ -2,20 +2,20 @@
 	import {getScreenManager} from "../screen-manager.svelte";
 	import {Screen} from "../screen.svelte";
 	import {Icon} from "@nano-forge/ui-tools";
-	import {blur, fade} from "svelte/transition";
+	import {blur, slide} from "svelte/transition";
 
 	let screenManager = getScreenManager();
 	let {screen}: { screen: Screen } = $props();
 </script>
 
-<a transition:blur
+<a transition:slide={{duration:150}}
    href={undefined}
    class:selected={screen.selected}
    data-screen-id={screen.id}
    onclick={()=>screenManager.focus(screen.id)}
 >
 	{#if screen.changed}
-		<div transition:fade class="changed"></div>
+		<div transition:blur class="changed"></div>
 	{/if}
 	{#if screen.loading}
 		<i class={Icon.duotone("spinner").with("icon", Icon.FW,Icon.ANIM_PULSE).class}></i>
@@ -44,6 +44,7 @@
 		cursor: pointer;
 		position: relative;
 		background-color: v(bg-color, #fff1);
+
 		i.icon {color: v(icon-color, #fffc);}
 		i.close { color: v(close-icon-color, #fffc);}
 		div.title {color: v(title-color, #fffc);}

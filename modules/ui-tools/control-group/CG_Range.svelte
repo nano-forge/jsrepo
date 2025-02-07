@@ -11,13 +11,45 @@
 </script>
 
 <CG_Segment grow={grow} noborder={noborder} label={label}>
-	<input type="range" disabled={disabled} bind:value {min} {max}>
+	<div class="range">
+		<input type="range" disabled={disabled} bind:value {min} {max}>
+	</div>
 </CG_Segment>
 
 <style lang="scss">
-	input {
-		border: none;
-		outline: none;
-		margin: 0 8px;
+	@use "../mixins" as *;
+	$var-scope: cg_range;
+	div.range {
+		background-color: v(range-bg-color, #FFF3);
+		border-radius: 15px;
+		padding: 3px;
+		align-self: center;
+		margin: 0 5px;
+		input {
+			background-color: transparent;
+			cursor: pointer;
+			appearance: none;
+			display: flex;
+			padding: 0;
+			width: 100%;
+			margin: 0;
+			&::-webkit-slider-runnable-track {
+				border-radius: 2rem;
+				height: 10px;
+			}
+			&::-webkit-slider-thumb {
+				-webkit-appearance: none;
+				background: v(range-thumb-color, #fff);
+				width: 15px;
+				height: 10px;
+				border-radius: 10px;
+				&:hover {
+					background: v(range-thumb-hover-color, #F90);
+				}
+			}
+			&:disabled {
+				opacity: v(range-disabled-opacity, 0.4);
+			}
+		}
 	}
 </style>
