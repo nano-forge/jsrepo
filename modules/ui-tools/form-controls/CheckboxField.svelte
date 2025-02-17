@@ -13,7 +13,10 @@
 	options = createMapper(options).map as Map<string, string>;
 
 	let values: Option[] = $state([])
-	options.entries().forEach(([key, label]: [string, string]) => values.push({key, label, selected: value.includes(key)}))
+
+	Array.from(options.entries() as [string, string][]).forEach(([key, label]: [string, string]) => {
+		values.push({ key, label, selected: value.includes(key) });
+	});
 
 	function changed(option: Option) {
 		if (option.selected && radio) {

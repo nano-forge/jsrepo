@@ -1,0 +1,8 @@
+{
+  "name": "@nano-forge/icon",
+  "version": "0.0.1+3",
+  "private": true,
+  "scripts": {},
+  "type": "module",
+  "dependencies": {}
+}

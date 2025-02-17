@@ -1,3 +1,5 @@
+// @nano-forge/sapphire.admin
+
 export * from './api';
 export * from './auth-manager.svelte';
 export * from './config-context';
@@ -8,6 +10,7 @@ export * from './list-manager.svelte';
 export * from './screen-manager.svelte';
 export * from './screen-type';
 export * from './screen.svelte';
+
 
 // attachments
 
@@ -25,6 +28,7 @@ export * from './attachments/File.svelte';
 export {default as FilePopup} from './attachments/FilePopup.svelte';
 export * from './attachments/FilePopup.svelte';
 
+
 // drawer
 
 export * from './drawer/drawer-manager.svelte';
@@ -34,6 +38,7 @@ export {default as DrawerContainer} from './drawer/DrawerContainer.svelte';
 export * from './drawer/DrawerContainer.svelte';
 export {default as DrawerScreenAdapter} from './drawer/DrawerScreenAdapter.svelte';
 export * from './drawer/DrawerScreenAdapter.svelte';
+
 
 // form
 
@@ -47,6 +52,7 @@ export {default as FormGroup} from './form/FormGroup.svelte';
 export * from './form/FormGroup.svelte';
 export {default as MultiLanguage} from './form/MultiLanguage.svelte';
 export * from './form/MultiLanguage.svelte';
+
 
 // layout
 
@@ -63,6 +69,7 @@ export * from './layout/Screen.svelte';
 export {default as Tab} from './layout/Tab.svelte';
 export * from './layout/Tab.svelte';
 
+
 // layout/menu
 
 export {default as ListMenu} from './layout/menu/ListMenu.svelte';
@@ -70,9 +77,12 @@ export * from './layout/menu/ListMenu.svelte';
 export {default as ScreenMenu} from './layout/menu/ScreenMenu.svelte';
 export * from './layout/menu/ScreenMenu.svelte';
 
+
 // list
 
 export {default as ItemCard} from './list/ItemCard.svelte';
 export * from './list/ItemCard.svelte';
 export {default as ItemList} from './list/ItemList.svelte';
 export * from './list/ItemList.svelte';
+
+

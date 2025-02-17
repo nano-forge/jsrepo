@@ -1,3 +1,5 @@
+// @nano-forge/sapphire.content-editor
+
 export * from './content-manager.svelte';
 export {default as AddPopup} from './AddPopup.svelte';
 export * from './AddPopup.svelte';
@@ -7,3 +9,5 @@ export {default as ContentEditor} from './ContentEditor.svelte';
 export * from './ContentEditor.svelte';
 export {default as TextBrick} from './TextBrick.svelte';
 export * from './TextBrick.svelte';
+
+

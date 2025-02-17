@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type {Icon} from "./icon";
+	import type {Icon} from "./icon.ts";
 	let {icon, ...rest}:{icon: Icon}=$props()
 </script>
 
