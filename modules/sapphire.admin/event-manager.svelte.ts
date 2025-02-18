@@ -24,6 +24,7 @@ export class EventManager {
 	}
 }
 
+
 let KEY = Symbol("EVENT")
 export function getEventManager() {return getContext<EventManager>(KEY)}
 export function createEventManager() {
