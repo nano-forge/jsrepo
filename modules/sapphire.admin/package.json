@@ -5,8 +5,8 @@
   "scripts": {},
   "type": "module",
   "dependencies": {
-    "@nano-forge/hammer.common": "0.0.1+18",
-    "@nano-forge/ui-tools": "0.0.1+1",
+    "@nano-forge/hammer.common": "0.0.1-dev.19",
+    "@nano-forge/ui-tools": "0.0.1+6",
     "@nano-forge/util": "0.0.2-dev.29",
     "sortablejs": "^1.15.6",
     "svelte": "^5.20.0",

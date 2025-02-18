@@ -1,37 +1,35 @@
 {
-  "name": "nanoforge-ui",
-  "version": "1.1.1+2",
-  "module": "index.ts",
-  "type": "module",
-  "repository": {
-    "url": "git://github.com/nano-forge/jsrepo"
-  },
-  "peerDependencies": {
-    "typescript": "^5.7.2"
-  },
-  "scripts": {
-    "b": "bun ./scripts/build.ts"
-  },
-  "dependencies": {
-    "@clack/prompts": "^0.9.1",
-    "@nano-forge/hammer.common": "^0.0.1-dev.15",
-    "@nano-forge/util": "^0.0.2-dev.24"
-  },
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@nano-forge/awesome-icons": "workspace:modules/awesome-icons",
-    "@nano-forge/icon": "workspace:modules/icon",
-    "@nano-forge/sapphire.admin": "workspace:modules/sapphire.admin",
-    "@nano-forge/sapphire.content-editor": "workspace:modules/sapphire.content-editor",
-    "@nano-forge/sapphire.image-editor": "workspace:modules/sapphire.image-editor",
-    "@nano-forge/ui-tools": "workspace:modules/ui-tools"
-  },
-  "workspaces": [
-    "modules/awesome-icons",
-    "modules/icon",
-    "modules/sapphire.admin",
-    "modules/sapphire.content-editor",
-    "modules/sapphire.image-editor",
-    "modules/ui-tools"
-  ]
+	"name": "nanoforge-ui",
+	"version": "1.1.1+2",
+	"module": "index.ts",
+	"type": "module",
+	"repository": {
+		"url": "git://github.com/nano-forge/jsrepo"
+	},
+	"peerDependencies": {
+		"typescript": "^5.7.2"
+	},
+	"scripts": {
+		"b": "bun ./scripts/build.ts"
+	},
+	"dependencies": {
+		"@clack/prompts": "^0.9.1"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"@nano-forge/awesome-icons": "workspace:modules/awesome-icons",
+		"@nano-forge/icon": "workspace:modules/icon",
+		"@nano-forge/sapphire.admin": "workspace:modules/sapphire.admin",
+		"@nano-forge/sapphire.content-editor": "workspace:modules/sapphire.content-editor",
+		"@nano-forge/sapphire.image-editor": "workspace:modules/sapphire.image-editor",
+		"@nano-forge/ui-tools": "workspace:modules/ui-tools"
+	},
+	"workspaces": [
+		"modules/awesome-icons",
+		"modules/icon",
+		"modules/sapphire.admin",
+		"modules/sapphire.content-editor",
+		"modules/sapphire.image-editor",
+		"modules/ui-tools"
+	]
 }
