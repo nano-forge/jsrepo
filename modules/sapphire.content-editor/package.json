@@ -6,7 +6,7 @@
   "type": "module",
   "dependencies": {
     "@nano-forge/util": "0.0.2-dev.29",
-    "@nano-forge/ui-tools": "0.0.1+6",
+    "@nano-forge/ui-tools": "0.0.1+11",
     "svelte": "^5.20.0",
     "svelte-dnd-action": "^1.15.6"
   }

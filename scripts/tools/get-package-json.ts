@@ -5,6 +5,7 @@ export class PackageJson {
 	content: any;
 
 	get name(): string { return this.content.name; }
+	get version(): string { return this.content.version; }
 	get dependencies(): string[] { return this.content.dependencies; }
 
 	bumpBuild() {

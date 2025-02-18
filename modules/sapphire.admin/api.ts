@@ -263,7 +263,6 @@ export namespace Api {
 		count: number,
 		items: Array<Item<DATA>>
 	}
-
 	/** Represents any item. */
 	export type AnyItem = Item<Record<string, any>>;
 	/** Represents any list. */

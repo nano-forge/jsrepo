@@ -1,13 +1,13 @@
 {
   "name": "@nano-forge/sapphire.image-editor",
-  "version": "0.0.1+12",
+  "version": "0.0.1+14",
   "private": true,
   "scripts": {},
   "type": "module",
   "dependencies": {
     "@nano-forge/hammer.common": "0.0.1-dev.19",
-    "@nano-forge/sapphire.admin": "0.0.1+6",
-    "@nano-forge/ui-tools": "0.0.1+6",
+    "@nano-forge/sapphire.admin": "0.0.1+14",
+    "@nano-forge/ui-tools": "0.0.1+11",
     "svelte": "^5.20.0"
   }
 }
