@@ -4,6 +4,9 @@ import path from "node:path";
 export class PackageJson {
 	content: any;
 
+	get name(): string { return this.content.name; }
+	get dependencies(): string[] { return this.content.dependencies; }
+
 	bumpBuild() {
 		let [ver, build]: [string, string] = this.content.version.split('+');
 		if (build === undefined) build = "0";

@@ -13,6 +13,7 @@ const icons = {
 	file: 'fa-file'
 }
 
+
 const extensions: Record<string, string> = {
 	gif: icons.image,
 	jpeg: icons.image,

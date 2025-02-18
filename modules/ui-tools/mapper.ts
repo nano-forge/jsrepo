@@ -9,6 +9,7 @@ export type MapperOptions = undefined | {
 	parser: (d: Record<string, any>) => [any, any]
 }
 
+
 export type MapperInput = Map<any, any> | Record<any, any> | string[] | Array<Record<string, any>> | string;
 
 export function createMapper(data: MapperInput): Mapper;
