@@ -83,7 +83,7 @@ class Module {
 }
 
 
-export class GmBuilder {
+export class App {
 
 	modules: Module[] = []
 	root: string;
@@ -103,6 +103,7 @@ export class GmBuilder {
 	}
 
 	module(name: string): Module | undefined { return this.modules.find(mod => mod.name === name);}
+	bumpBuild() {this.pkg.bumpBuild().write();}
 }
 
 
